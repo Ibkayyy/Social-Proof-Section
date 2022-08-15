@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 17px;
+    font-family: 'League Spartan', sans-serif;
+    padding: 1.8em 2em;
+}
+
+.mainContainer{
+    padding: 5em 10em;
+    background-color: hsl(300, 24%, 96%);
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    background-size: contain;
+}
+
+/*top*/
+
+.topFlexContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+.mainContent{
+    max-width: 25em;
+}
+
+h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 3em;
+    line-height: 0.9;
+    padding-bottom: 0.4em;
+}
+
+.mainText{
+    font-size: 1em;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+    line-height: 1.3;
+}
+
+.ratingsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 48%; 
+}
+
+.ratings{
+    width: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e3f3;
+    border-radius: 0.5em;
+    padding: 1em 3em 1em 0;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.ratingsText{
+    padding-left: 2em;
+    font-size: 0.9em;
+}
+
+.box1{
+    align-self: start;
+}
+
+.box2{
+    align-self: center;
+}
+
+.box3{
+    align-self: end;
+}
+
+/*bottom*/
+
+.bottomFlexContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    height: 16.5em;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+    padding-bottom: 1.4em;
+}
+
+.userImage{
+    width: 2.8em;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.position{
+    color: hsl(333, 80%, 67%);
+}
+
+.testimonial{
+    min-height: 15em;
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.5em;
+    padding: 2em;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.coltonSmith{
+    align-self: start;
+}
+
+.ireneRoberts{
+    align-self: center;
+}
+
+.anneWallace{
+    align-self: end;
+}
+
+/* Media Queries */
+@media (max-width: 1280px){
+    .mainContainer{
+        padding: 5em 5em;
+    }
+}
+
+@media (max-width: 1111px){
+    .mainContainer{
+        padding: 4em 3em;
+    }
+
+    .topFlexContainer{
+        flex-direction: column;
+        padding-bottom: 2.5em;
+    }
+
+    .bottomFlexContainer{
+        width: auto;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ratingsContainer{
+        padding-top: 2em;
+        width: auto;
+    }
+
+    .ratings{
+        max-width: 25em;
+        margin: auto;
+    }
+
+    .testimonial{
+        max-width: 28em;
+        min-height: auto;
+        margin: auto;
+        
+    }
+
+}
+
+@media (max-width: 594px){
+    body{
+        padding: 0;
+    }
+
+    .mainContainer{
+        padding: 4em 2.4em;
+    }
+
+    .ratingsContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .ratings{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5em;
+        padding: 0.5em 0;
+    }
+
+    .ratingsText{
+        padding-left: 0;
+    }
+}
